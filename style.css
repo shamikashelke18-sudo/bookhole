@@ -1,0 +1,436 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Caveat", sans-serif;
+  color: #fffaed;
+  background-color: #702c63;
+}
+
+img{
+  width:6%;
+}
+
+a {
+  color: inherit;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a3728;
+  padding: 16px 30px;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  padding-bottom: 4px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  border-bottom: 1px solid #fff;
+}
+
+.search-small {
+  width: 150px;
+  height: 30px;
+  border: 2.5px solid #d8803d;
+  border-radius: 20px;
+}
+
+.master,
+.page-heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.master {
+  padding: 75px 20px 70px;
+  background-color: #702c63;
+  font-size:2rem;
+}
+
+.home-master h1,
+.page-heading h1 {
+  max-width: 760px;
+  margin: 8px auto 14px;
+ color: #fffaed;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.master p:not(.small-title),
+.page-heading p:not(.small-title) {
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #fffaed;
+}
+
+.small-title {
+  letter-spacing: 2px;
+  font-size: 11px;
+  color: #a9744f;
+  font-weight: bold;
+}
+
+.master-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #4d2d1d;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 11px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.button:hover {
+  background-color: #702c63;
+}
+
+.button-light {
+  background-color: #fff;
+  color: #4a3728;
+  border: 1px solid #702c63;
+}
+
+.home-content,
+.content-section,
+.ask-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px 55px;
+}
+
+.section-row h2{
+  color: #fffaed;
+  font-size: 2rem;
+}
+
+h2 {
+ color: #702c63;
+}
+
+.muted {
+  color: #fffaed;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.book-card {
+  background-color: #fff;
+  border: 2px solid #4a3728;;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .05);
+}
+
+.book-card h3 {
+  margin: 0 0 5px;
+ color:#702c63;
+  font-size: 17px;
+}
+
+.author {
+  color: #777;
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+
+.status-tag {
+  display: inline-block;
+  background-color: #f1e4d3;
+  color: #a9744f;
+  padding: 4px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+}
+
+.rating {
+  color: #d4a017;
+  min-height: 18px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.card-actions button {
+  border: 0;
+  border-radius: 4px;
+  padding: 7px 10px;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 11px;
+}
+
+.fav-btn {
+  background-color: #ca2181;
+}
+
+.delete-btn {
+  background-color: #c26460;
+}
+
+.page-heading {
+  background-color: #702c63;;
+  padding: 55px 20px;
+}
+
+.add-box,
+.ask-card,
+.answer-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .05);
+}
+
+.add-box form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 11px;
+  background-color: white;
+}
+
+.add-box input,
+.add-box select {
+  flex: 1 1 180px;
+}
+
+.section-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+  margin-top: 45px;
+}
+
+.sort-small{
+  border-radius: 20px;
+  border: 2px solid #4a3728;
+}
+
+.empty-message {
+  text-align: center;
+  color: #777;
+  font-size: 13px;
+  padding: 30px 0;
+}
+
+.ask-section {
+  max-width: 760px;
+}
+
+.ask-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ask-card label {
+  color: #4a3728;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.ask-card textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.answer-card {
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+.answer-card h2 {
+  margin-top: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.intro-page {
+  min-height: 100vh;
+  background-color: #702c63;
+}
+
+.intro-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.intro-card {
+  background-color: #fffaed;
+  max-width: 650px;
+  padding: 60px 45px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, .06);
+  margin-bottom: 70px;
+}
+.infos{
+   color: white;
+  max-width: 650px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.book-mark {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.intro-card h1 {
+  color: #702c63;
+  font-size: 38px;
+  line-height: 1.25;
+  margin: 8px 0 15px;
+}
+
+.intro-card p:not(.small-title) {
+  color: #702c63;
+  line-height: 1.8;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.infos{
+  width:100%;
+  margin-left: 0;
+  font-size: 2rem;
+}
+.infos img{
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4a3728;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-master h1,
+  .page-heading h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-small {
+    width: 100%;
+  }
+
+  .intro-card {
+    padding: 40px 24px;
+  }
+
+  .intro-card h1 {
+    font-size: 29px;
+  }
+
+  .home-master h1,
+  .page-heading h1 {
+    font-size: 27px;
+  }
+}
+
+.book-tools {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sort-small {
+  min-width: 125px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="index.html"><img src="./assets/books.png" alt="books stack logo for website"/>  BookHole</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="favorites.html">Favourites</a></li>
+        <li><a href="askme.html">Ask Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-heading">
+      <p class="small-title">YOUR SHELF</p>
+      <h1>Favourites</h1>
+      <p>The books you've saved from your reading list.</p>
+    </section>
+
+    <section class="content-section">
+      <div class="section-row favourites-row">
+        <div>
+          <h2>Books you love</h2>
+          <p class="muted">Click the heart on a book to remove it from here.</p>
+        </div>
+        <div class="book-tools">
+          <input class="search-small" type="text" id="searchInput" placeholder="Search favourites...">
+          <select class="sort-small" id="sortSelect">
+            <option value="Default">Default</option>
+            <option value="Title">A to Z</option>
+            <option value="Rating">Rating</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="book-grid" id="bookGrid"></div>
+      <p id="emptyFavorites" class="empty-message">No favourites yet. Go to Home and click the heart on a book.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made for people who always have a book nearby.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

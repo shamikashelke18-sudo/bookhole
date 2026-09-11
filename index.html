@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="index.html"><img src="./assets/books.png" alt="books stack logo for website"/>  BookHole</a>
+      <ul class="nav-links">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="favorites.html">Favourites</a></li>
+        <li><a href="askme.html">Ask Me</a></li>
+        <li><input class="book-tools search-small" type="text" id="searchInput" placeholder="Search books..."></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="master home-master">
+      <h1>Keep your books in one place.</h1>
+      <p>Add the books you want to read, keep track of what you're reading.</p>
+    </section>
+
+    <section class="content-section">
+      <div class="add-box">
+        <h2>Add a Book</h2>
+        <form id="bookForm">
+          <input type="text" id="titleInput" placeholder="Book title" required>
+          <input type="text" id="authorInput" placeholder="Author" required>
+          <select id="statusInput">
+            <option value="Want to Read">Want to Read</option>
+            <option value="Reading">Currently Reading</option>
+            <option value="Completed">Completed</option>
+          </select>
+          <select id="ratingInput">
+            <option value="0">Rating</option>
+            <option value="1">1 star</option>
+            <option value="2">2 stars</option>
+            <option value="3">3 stars</option>
+            <option value="4">4 stars</option>
+            <option value="5">5 stars</option>
+          </select>
+          <button class="button" type="submit">Add Book</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="home-content">
+      <div class="section-row">
+        <div>
+          <h2>My Books</h2>
+          <p class="muted">List of what you're reading and what you want to read next.</p>
+        </div>
+        <div class="book-tools">
+          <select class="sort-small" id="sortSelect">
+            <option value="Default">Default</option>
+            <option value="Title">A to Z</option>
+            <option value="Rating">Rating</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="book-grid" id="homeBooks"></div>
+      <p id="emptyHome" class="empty-message">No books yet. Add your first book above.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made for people who always have a book nearby.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

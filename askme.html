@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="index.html"><img src="./assets/books.png" alt="books stack logo for website"/> BookHole</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="favorites.html">Favourites</a></li>
+        <li><a class="active" href="askme.html">Ask Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-heading">
+      <p class="small-title">NOT SURE WHAT TO READ?</p>
+      <h1>Ask Me</h1>
+      <p>Tell me what kind of book you are in the mood for.</p>
+    </section>
+
+    <section class="ask-section">
+      <form id="askForm" class="ask-card">
+        <label for="mood">What are you in the mood for?</label>
+        <select id="mood">
+          <option value="comfort">Something comforting</option>
+          <option value="mystery">A mystery</option>
+          <option value="non-fiction">Political</option>
+          <option value="adventure">An adventure</option>
+          <option value="thoughtful">Something thoughtful</option>
+          <option value="easy">Something easy and fun</option>
+        </select>
+
+        <label for="thoughts">Or tell me what you are thinking about.</label>
+        <textarea id="thoughts" rows="6" placeholder="I want a book that... "></textarea>
+
+        <button class="button" type="submit">Give Me a Suggestion</button>
+      </form>
+
+      <div id="answer" class="answer-card hidden"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made for people who always have a book nearby.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
